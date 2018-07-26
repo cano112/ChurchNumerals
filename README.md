@@ -1,5 +1,5 @@
 # Liczebniki Churcha
-##Co to jest?
+## Co to jest?
 Liczebniki Churcha są jednym z możliwych sposobów reprezentacji liczb naturalnych.  
 Weźmy dowolną funkcję f oraz dowolną liczbę naturalną n. Liczbie n przypisujemy funkcję wyższego rzędu c<sub>n</sub>:
 
@@ -7,13 +7,13 @@ Weźmy dowolną funkcję f oraz dowolną liczbę naturalną n. Liczbie n przypis
 
 Liczbę n interpretujemy jako ilość aplikacji funkcji f na argument x.
 
-###Przykłady
+### Przykłady
   * c<sub>1</sub> = f (x) - reprezentacja liczby 1
   * c<sub>2</sub> = f (f (x)) - reprezentacja liczby 2
   * c<sub>6</sub> = f( f( f( f( f( f (x)))))) - reprezentacja liczby 6
   
-##Rachunek lambda
-###Definicja
+## Rachunek lambda
+### Definicja
 Liczebniki Churcha możemy zdefiniować w rachunku lambda, w sposób przedstawiony w poniższej tabeli.
 
 |Liczba naturalna|Wyrażenie lambda|
@@ -25,7 +25,7 @@ Liczebniki Churcha możemy zdefiniować w rachunku lambda, w sposób przedstawio
 |...|...|
 |n|&lambda;f.&lambda;x.f<sup>n</sup> x
 
-###Operacje arytmetyczne
+### Operacje arytmetyczne
 Na zdefiniowanych w ten sposób liczbach możemy wykonywać normalne operacje arytmetyczne. 
 W poniższej tabeli przedstawiono operacje, ich definicje w rachunku lambda oraz tożsamości użyte do ich zdefiniowania.
 
@@ -38,6 +38,6 @@ W poniższej tabeli przedstawiono operacje, ich definicje w rachunku lambda oraz
 
 Tożsamość wykorzystaną do zdefiniowania potęgowania można wyprowadzić bezpośrednio z definicji liczebników Churcha.
 
-##Implementacja
+## Implementacja
 Liczebniki Churcha doskonale nadają się do implementacji w dowolnym funkcyjnym języku programowania.  
 Przykładową implementację przeprowadziłem w języku Python, który obsługuje operacje na wyrażeniach lambda.
